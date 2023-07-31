@@ -1,0 +1,127 @@
+/* App.css */
+
+/* Primary color for the app */
+:root {
+  --primary-color: #007bff;
+}
+
+/* App container styles */
+.App {
+  font-family: Arial, sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Heading styles */
+h1 {
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Input box styles */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+thead td {
+  padding: 12px;
+  font-weight: bold;
+}
+
+tbody td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+/* Row hover effect */
+tbody tr:hover {
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+/* Logo column styles */
+td.logo {
+  display: flex;
+  align-items: center;
+}
+
+td.logo img {
+  margin-right: 10px;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Logo scaling on hover */
+td.logo img:hover {
+  transform: scale(1.1);
+}
+
+/* Rank cell styles */
+td.rank {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Price and volume cells styles */
+td.marketCap,
+td.price,
+td.volume {
+  font-family: monospace;
+  font-size: 16px;
+}
+
+/* Website link button styles */
+.link-button {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Button hover effect */
+.link-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 600px) {
+  input[type="text"] {
+    font-size: 14px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
